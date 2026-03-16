@@ -1,0 +1,115 @@
+.curved-section {
+  padding: 2rem 0;
+}
+
+.section-panel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 52px 42px 58px 46px;
+  padding: clamp(2.4rem, 5vw, 4.4rem);
+  background:
+    linear-gradient(160deg, color-mix(in oklab, var(--surface) 92%, #ffffff 8%) 0%, var(--surface-2) 100%);
+  border: 1px solid color-mix(in oklab, var(--border) 84%, #ffffff 16%);
+  box-shadow: 0 18px 44px rgba(5, 21, 39, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.24);
+  transform: translateY(22px);
+  opacity: 0;
+  transition: transform 0.55s ease, opacity 0.55s ease, box-shadow 0.35s ease;
+}
+
+.curved-section.is-visible .section-panel {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.section-panel::before,
+.section-panel::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.section-panel::before {
+  width: 320px;
+  height: 140px;
+  top: -82px;
+  right: 14%;
+  border-radius: 0 0 68% 68%;
+  background: radial-gradient(circle at 50% 100%, rgba(106, 240, 214, 0.25), transparent 72%);
+}
+
+.section-panel::after {
+  width: 300px;
+  height: 130px;
+  bottom: -78px;
+  left: 16%;
+  border-radius: 68% 68% 0 0;
+  background: radial-gradient(circle at 50% 0%, rgba(59, 211, 184, 0.2), transparent 70%);
+}
+
+.section-panel:hover {
+  box-shadow: 0 28px 58px rgba(5, 21, 39, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.section-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+.section-title-wrap {
+  margin-bottom: 1.8rem;
+}
+
+.section-title-wrap h2 {
+  margin-top: 0.45rem;
+  font-size: clamp(1.55rem, 2.7vw, 2.35rem);
+  line-height: 1.2;
+}
+
+.section-layout {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.section-layout.two-column {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+}
+
+.about-bio {
+  font-size: 1.05rem;
+  color: var(--text-soft);
+}
+
+.about-points {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.about-points li {
+  color: var(--text-soft);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.about-points li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--primary);
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+}
+
+@media (max-width: 980px) {
+  .section-panel {
+    border-radius: 38px;
+    padding: clamp(1.6rem, 4vw, 2.6rem);
+  }
+
+  .section-layout.two-column {
+    grid-template-columns: 1fr;
+  }
+}
