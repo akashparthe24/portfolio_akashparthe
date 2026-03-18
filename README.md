@@ -37,7 +37,6 @@ src/
     ContactSection.jsx
   data/
     portfolioData.js
-    projects.example.js
   App.jsx
   index.css
   main.jsx
