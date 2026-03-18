@@ -10,7 +10,7 @@ function GithubActivitySection() {
       <SectionTitle
         eyebrow="GitHub"
         title="Activity Snapshot"
-        subtitle="Optional visual section inspired by developerFolio's GitHub emphasis."
+        subtitle="Optional visual section for highlighting GitHub activity."
       />
 
       <Card className="github-card">

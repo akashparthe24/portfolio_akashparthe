@@ -1,10 +1,8 @@
 # Akash Parthe Portfolio
 
-Modern, recruiter-friendly portfolio website built with React + Vite, inspired by layout ideas from:
-- `saadpasta/developerFolio` (single-source content model, section flow, optional GitHub activity)
-- `jigar-sable/Portfolio-Website` (clear project grouping and straightforward readability)
+Modern, recruiter-friendly portfolio website built with React + Vite.
 
-This implementation is rebuilt from scratch with a cleaner architecture, responsive UI, dark mode, smoother visuals, and easy content updates.
+This implementation is built with a cleaner architecture, responsive UI, smoother visuals, and easy content updates.
 
 ## Stack
 - React 19
