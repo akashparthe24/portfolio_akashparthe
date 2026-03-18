@@ -4,6 +4,8 @@ import SectionTitle from "../components/SectionTitle";
 import { featuredProjects } from "../data/portfolioData";
 
 function FeaturedProjectsSection() {
+  const loopedProjects = [...featuredProjects, ...featuredProjects];
+
   return (
     <SectionContainer id="featured-projects">
       <SectionTitle
@@ -12,10 +14,16 @@ function FeaturedProjectsSection() {
         subtitle="Projects where business outcomes and engineering execution were both critical."
       />
 
-      <div className="project-grid featured-grid">
-        {featuredProjects.map((project) => (
-          <ProjectCard key={project.title} project={project} featured />
-        ))}
+      <div className="featured-carousel" aria-label="Featured projects slider">
+        <div className="featured-carousel-viewport">
+          <div className="featured-carousel-track">
+            {loopedProjects.map((project, index) => (
+              <div key={`${project.title}-${index}`} className="featured-carousel-slide">
+                <ProjectCard project={project} featured />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </SectionContainer>
   );

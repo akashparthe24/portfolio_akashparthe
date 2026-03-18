@@ -7,7 +7,7 @@ export function HeroBlock() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[calc(100vh-72px)] w-full items-center justify-center overflow-hidden rounded-none border border-slate-300/60 bg-white/70 px-6 py-16 shadow-[0_24px_58px_rgba(24,72,110,0.12)] backdrop-blur-sm md:px-10"
+      className="relative flex min-h-[calc(100dvh-60px)] w-full items-center justify-center overflow-hidden rounded-none border border-slate-300/60 bg-white/70 px-6 py-16 shadow-[0_24px_58px_rgba(24,72,110,0.12)] backdrop-blur-sm md:px-10"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-sky-50/85 via-cyan-50/55 to-emerald-50/65" />
 

@@ -23,25 +23,11 @@ export const hero = {
   tagline:
     "I translate business goals into data products, intelligent systems, and reliable pipelines that improve decision speed and impact.",
   location: "Pittsburgh, PA",
-  profileImage: {
-    src: "/images/Head_Shot.jpeg",
-    alt: "Akash Parthe portrait in a dark blazer",
-  },
   socialLinks: {
     github: "https://github.com/akashparthe24/akash-parthe24",
     linkedin: "https://www.linkedin.com/in/akashparthe/",
     email: "mailto:aparthe@tepper.cmu.edu",
   },
-  resumeLinks: [
-    // The first item is used as the primary CTA in the hero section.
-    {
-      label: "Unified Resume",
-      href: "/resumes/Business_Analyst_Akash_Parthe.pdf",
-    },
-    { label: "Business Analyst Resume", href: "/resumes/Business_Analyst_Akash_Parthe.pdf" },
-    { label: "AI Engineer Resume", href: "/resumes/ML_Akash_Parthe.pdf" },
-    { label: "Data Engineer Resume", href: "/resumes/Data_Engineer_Akash_Parthe.pdf" },
-  ],
 };
 
 export const about = {
@@ -293,12 +279,21 @@ export const education = [
 ];
 
 export const certifications = [
-  "Microsoft Certified: Fabric Analytics Engineer Associate (DP-700)",
-  "Microsoft Certified: Fabric Data Engineer Associate",
-  "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
+  {
+    label: "Microsoft Certified: Fabric Analytics Engineer Associate",
+    href: "https://learn.microsoft.com/en-us/users/akashvilasparthe-2200/credentials/e396cb69186285b6?ref=https%3A%2F%2Fwww.linkedin.com%2F",
+  },
+  {
+    label: "Microsoft Certified: Fabric Data Engineer Associate",
+    href: "https://learn.microsoft.com/en-us/users/akashvilasparthe-2200/credentials/7671e35fb53fb29f?ref=https%3A%2F%2Fwww.linkedin.com%2F",
+  },
+  {
+    label: "Microsoft Certified: Power BI Data Analyst Associate",
+    href: "https://learn.microsoft.com/en-us/users/akashvilasparthe-2200/credentials/2f6a9e9eaac16f40?ref=https%3A%2F%2Fwww.linkedin.com%2F",
+  },
   {
     label: "Databricks Certified Data Engineer Associate",
-    href: "https://drive.google.com/file/d/1g5pFfTrNLVF9ALySB8ks6K8F8eMTL9ZB/view?usp=drive_link",
+    href: "https://credentials.databricks.com/d65a4b76-b932-4bf1-940c-3ef53f12a929#acc.K5vRh2SM",
   },
 ];
 

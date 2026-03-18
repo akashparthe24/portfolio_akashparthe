@@ -21,10 +21,8 @@ function CertificationsSection() {
 
           return (
             <li key={cert.label}>
-              <Card as="div" className="cert-card">
-                <a href={cert.href} target="_blank" rel="noopener noreferrer">
-                  {cert.label}
-                </a>
+              <Card as="a" className="cert-card" href={cert.href} target="_blank" rel="noopener noreferrer">
+                {cert.label}
               </Card>
             </li>
           );

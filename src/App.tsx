@@ -1,4 +1,5 @@
-import { useLayoutEffect } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
+import { ArrowUp } from "lucide-react";
 import Navbar from "./components/Navbar";
 import { siteMetadata } from "./data/portfolioData";
 import AboutSection from "./sections/AboutSection";
@@ -13,6 +14,8 @@ import ProjectsSection from "./sections/ProjectsSection";
 import SkillsSection from "./sections/SkillsSection";
 
 function App() {
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
   useLayoutEffect(() => {
     const previousScrollRestoration = window.history.scrollRestoration;
     window.history.scrollRestoration = "manual";
@@ -29,6 +32,17 @@ function App() {
     return () => {
       window.history.scrollRestoration = previousScrollRestoration;
     };
+  }, []);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setShowBackToTop(window.scrollY > 360);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
@@ -64,6 +78,15 @@ function App() {
             </p>
           </div>
         </footer>
+
+        <button
+          type="button"
+          className={`back-to-top ${showBackToTop ? "visible" : ""}`}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          aria-label="Back to top"
+        >
+          <ArrowUp size={18} />
+        </button>
       </div>
     </div>
   );
