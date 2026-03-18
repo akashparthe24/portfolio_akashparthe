@@ -4,6 +4,19 @@ import { Mail } from "lucide-react";
 import { hero } from "@/data/portfolioData";
 
 export function HeroBlock() {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (!contactSection) return;
+
+    const headerHeight = 60;
+    const targetTop = contactSection.offsetTop - headerHeight - 8;
+
+    window.scrollTo({
+      top: Math.max(targetTop, 0),
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section
       id="top"
@@ -45,7 +58,7 @@ export function HeroBlock() {
               <img
                 src={`${import.meta.env.BASE_URL}images/Head_Shot.jpeg`}
                 alt={`${hero.name} profile`}
-                className="block h-full w-full scale-[1.3] -translate-y-[8%] object-cover"
+                className="block h-full w-full object-cover object-[58%_24%]"
               />
             </div>
           </motion.div>
@@ -74,12 +87,10 @@ export function HeroBlock() {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="mb-12 flex flex-wrap justify-center gap-4"
           >
-            <a href="#contact">
-              <Button size="lg" className="gap-2">
-                <Mail className="h-4 w-4" />
-                Get in Touch
-              </Button>
-            </a>
+            <Button size="lg" className="gap-2" onClick={scrollToContact}>
+              <Mail className="h-4 w-4" />
+              Get in Touch
+            </Button>
           </motion.div>
 
         </motion.div>

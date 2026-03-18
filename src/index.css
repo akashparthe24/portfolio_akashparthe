@@ -178,8 +178,6 @@ ul {
 
 .section {
   padding: 3.2rem 0;
-  content-visibility: auto;
-  contain-intrinsic-size: 1px 600px;
 }
 
 .skip-link {
