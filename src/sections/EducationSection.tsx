@@ -2,6 +2,7 @@ import Card from "../components/Card";
 import SectionContainer from "../components/SectionContainer";
 import SectionTitle from "../components/SectionTitle";
 import { education } from "../data/portfolioData";
+import { GraduationCap } from "lucide-react";
 
 function EducationSection() {
   return (
@@ -11,12 +12,16 @@ function EducationSection() {
       <div className="education-grid">
         {education.map((item) => (
           <Card key={item.degree} className="education-card">
-            <h3>{item.degree}</h3>
-            <p className="education-meta">
-              {item.school} | {item.location}
-            </p>
-            <p className="education-date">{item.timeline}</p>
-            <p>{item.details}</p>
+            <div className="education-card-top">
+              <span className="education-icon" aria-hidden="true">
+                <GraduationCap size={16} />
+              </span>
+              <p className="education-date">{item.timeline}</p>
+            </div>
+
+            <h3 className="education-degree">{item.degree}</h3>
+            <p className="education-school">{item.school}</p>
+            <p className="education-location">{item.location}</p>
           </Card>
         ))}
       </div>
