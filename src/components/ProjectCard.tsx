@@ -15,20 +15,17 @@ function ProjectCard({ project, featured = false, showLinks = true }: ProjectCar
     <Card className={`project-card ${featured ? "featured" : ""}`}>
       {project.category ? <p className="project-category">{project.category}</p> : null}
       <h3>{project.title}</h3>
-      <p className="project-summary">{project.description}</p>
+      <p className="project-summary">{project.impact}</p>
 
       <ul className="project-story-list">
         <li>
-          <span>Problem:</span> {project.problem}
+          <span>Business Challenge:</span> {project.problem}
         </li>
         <li>
-          <span>Approach:</span> {project.approach}
+          <span>Solution Approach:</span> {project.approach}
         </li>
         <li>
-          <span>Impact:</span> {project.impact}
-        </li>
-        <li>
-          <span>Why it matters:</span> {project.whyItMatters}
+          <span>Why It Matters:</span> {project.whyItMatters}
         </li>
       </ul>
 

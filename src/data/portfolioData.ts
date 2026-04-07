@@ -21,7 +21,7 @@ export const hero = {
   name: "Akash Vilas Parthe",
   title: "Business Analyst | Product Analyst | Analytics Consultant",
   tagline:
-    "Business Analyst and MSBA candidate at Carnegie Mellon with 3+ years of experience turning business needs into data-driven decisions using SQL, Python, Power BI, Azure, and Microsoft Fabric.",
+    "Business Analyst with 3+ years driving measurable business impact—40% cost reduction, 30% faster delivery, and $5M+ executive visibility—by translating stakeholder needs into data-driven solutions. Currently completing MSBA at Carnegie Mellon.",
   location: "Pittsburgh, PA",
   socialLinks: {
     github: "https://github.com/akashparthe24/akash-parthe24",
