@@ -24,7 +24,7 @@ export const hero = {
     "Business Analyst with 3+ years driving measurable business impact—40% cost reduction, 30% faster delivery, and $5M+ executive visibility—by translating stakeholder needs into data-driven solutions. Currently completing MSBA at Carnegie Mellon.",
   location: "Pittsburgh, PA",
   socialLinks: {
-    github: "https://github.com/akashparthe24/akash-parthe24",
+    github: "https://github.com/akashparthe24",
     linkedin: "https://www.linkedin.com/in/akashparthe/",
     email: "mailto:aparthe@tepper.cmu.edu",
   },
@@ -143,7 +143,7 @@ export const featuredProjects: ProjectEntry[] = [
       tools: "Requirements Workshops, UAT, Stakeholder Management, Python, Amazon Rekognition",
     },
     tech: ["Amazon Rekognition", "Amazon Bedrock", "Python", "Transfer Learning", "OpenCV"],
-    github: "https://github.com/akashparthe24/akash-parthe24",
+    github: "https://github.com/akashparthe24",
     demo: "",
   },
   {
@@ -165,7 +165,7 @@ export const featuredProjects: ProjectEntry[] = [
       tools: "Stakeholder Workshops, KPI Development, Power BI, Microsoft Fabric, Azure Synapse",
     },
     tech: ["Power BI", "Microsoft Fabric", "Azure Synapse", "T-SQL", "PySpark"],
-    github: "https://github.com/akashparthe24/akash-parthe24",
+    github: "https://github.com/akashparthe24",
     demo: "",
   },
   {
@@ -187,7 +187,7 @@ export const featuredProjects: ProjectEntry[] = [
       tools: "Stakeholder Interviews, Gap Analysis, Process Automation, Python, SQL, Azure",
     },
     tech: ["Python", "Multiprocessing", "SQL", "Azure Data Engineering"],
-    github: "https://github.com/akashparthe24/akash-parthe24",
+    github: "https://github.com/akashparthe24",
     demo: "",
   },
 ];
@@ -214,7 +214,7 @@ export const projectsByCategory = [
           tools: "Python, OpenCV, Amazon Rekognition, Amazon Bedrock",
         },
         tech: ["Python", "OpenCV", "Amazon Rekognition", "Bedrock"],
-        github: "https://github.com/akashparthe24/akash-parthe24",
+        github: "https://github.com/akashparthe24",
         demo: "",
       },
       {
@@ -235,7 +235,7 @@ export const projectsByCategory = [
           tools: "User Research, Requirements Discovery, Python, FAISS, Hugging Face",
         },
         tech: ["LangChain", "FAISS", "LLMs", "Hugging Face"],
-        github: "https://github.com/akashparthe24/akash-parthe24",
+        github: "https://github.com/akashparthe24",
         demo: "",
       },
     ],
@@ -261,7 +261,7 @@ export const projectsByCategory = [
           tools: "Azure Data Factory, PySpark, T-SQL, Microsoft Fabric",
         },
         tech: ["Azure Data Factory", "PySpark", "T-SQL", "Fabric"],
-        github: "https://github.com/akashparthe24/akash-parthe24",
+        github: "https://github.com/akashparthe24",
         demo: "",
       },
       {
@@ -282,7 +282,7 @@ export const projectsByCategory = [
           tools: "Python, Microsoft Fabric, Power BI, SQL",
         },
         tech: ["Python", "Microsoft Fabric", "Power BI", "SQL"],
-        github: "https://github.com/akashparthe24/akash-parthe24",
+        github: "https://github.com/akashparthe24",
         demo: "",
       },
       {
@@ -303,7 +303,7 @@ export const projectsByCategory = [
           tools: "Stakeholder Interviews, Gap Analysis, Python, SQL, Azure",
         },
         tech: ["Python", "SQL", "Data Validation", "Azure"],
-        github: "https://github.com/akashparthe24/akash-parthe24",
+        github: "https://github.com/akashparthe24",
         demo: "",
       },
       {
@@ -324,7 +324,7 @@ export const projectsByCategory = [
           tools: "T-SQL, PySpark, Power BI, Microsoft Fabric, Azure Synapse",
         },
         tech: ["T-SQL", "PySpark", "Power BI", "Microsoft Fabric", "Azure Synapse"],
-        github: "https://github.com/akashparthe24/akash-parthe24",
+        github: "https://github.com/akashparthe24",
         demo: "",
       },
     ],
@@ -440,5 +440,5 @@ export const certifications = [
 export const contact = {
   email: "aparthe@tepper.cmu.edu",
   linkedin: "https://www.linkedin.com/in/akashparthe/",
-  github: "https://github.com/akashparthe24/akash-parthe24",
+  github: "https://github.com/akashparthe24",
 };
