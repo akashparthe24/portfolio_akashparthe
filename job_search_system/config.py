@@ -50,55 +50,103 @@ TARGET_ROLES = os.getenv('TARGET_ROLES', 'Business Analyst,Senior Business Analy
 # CSV file path
 CONTACTS_CSV = DATA_DIR / "contacts.csv"
 
-# Resume data (from portfolio)
+# Resume data (from actual resume)
 RESUME_DATA = {
     'name': 'Akash Vilas Parthe',
-    'title': 'Business Analyst | Product Analyst | Analytics Consultant',
+    'title': 'Business Analyst | Data Engineer',
     'location': 'Pittsburgh, PA',
     'email': 'aparthe@tepper.cmu.edu',
+    'phone': '(412) 478-6687',
     'linkedin': 'https://www.linkedin.com/in/akashparthe/',
     'github': 'https://github.com/akashparthe24',
-    'years_experience': '3+',
+    'years_experience': '3',
     'education': {
         'current': 'MSBA at Carnegie Mellon University',
         'degree': 'Master of Science in Business Analytics',
         'school': 'Carnegie Mellon University, Tepper School of Business',
+        'timeline': 'Aug 2025 – May 2026',
+        'coursework': [
+            'Statistics', 'Machine Learning', 'Operations Research',
+            'Financial Analysis', 'Database Management'
+        ],
+        'undergrad': 'Bachelor of Engineering in Computer Engineering',
+        'undergrad_school': 'University of Mumbai, Pillai College of Engineering'
     },
     'skills': {
         'business_analysis': [
-            'Requirements Gathering', 'BRD/FRD', 'Stakeholder Management',
-            'Business Process Improvement', 'Gap Analysis', 'Root Cause Analysis',
-            'User Story Development', 'UAT Coordination', 'KPI Design',
-            'Agile', 'Scrum', 'SDLC'
+            'Requirements Gathering', 'Business Requirements Documents (BRDs)',
+            'Functional Requirements Documents (FRDs)', 'Stakeholder Management',
+            'User Stories', 'Acceptance Criteria', 'Gap Analysis',
+            'Root Cause Analysis', 'Business Process Modeling (BPMN)',
+            'Process Improvement', 'UAT Coordination', 'Change Management',
+            'SDLC', 'Decision Support', 'Data Storytelling'
         ],
         'analytics': [
-            'SQL', 'Python', 'Excel', 'Power BI', 'Tableau',
-            'Data Analysis', 'Statistical Analysis', 'Data Visualization',
-            'Business Intelligence', 'Executive Reporting', 'Dashboard Design'
+            'SQL Querying', 'Python', 'Excel (Advanced)', 'Power BI', 'Tableau',
+            'Statistical Analysis', 'Data Visualization', 'KPI Development',
+            'Executive Reporting', 'Data Validation', 'A/B Testing'
         ],
-        'technical': [
-            'ETL Pipelines', 'Data Warehousing', 'PySpark', 'Apache Spark',
-            'Databricks', 'Apache Airflow', 'Azure Data Factory',
-            'Azure Synapse', 'Microsoft Fabric', 'Snowflake'
+        'methodologies_tools': [
+            'Agile/Scrum', 'Sprint Planning', 'Backlog Refinement',
+            'JIRA', 'Confluence', 'Microsoft Office Suite',
+            'Data Modeling', 'ETL', 'Reporting Automation'
+        ],
+        'platforms': [
+            'Microsoft Fabric', 'Azure Synapse', 'Azure Data Factory',
+            'Azure Data Lake', 'Snowflake', 'Databricks'
         ]
     },
     'achievements': [
-        '40% cost reduction through process improvements',
-        '30% faster delivery cycles',
-        '$5M+ executive visibility into cloud spend',
-        '90% reduction in manual validation effort',
-        '30% faster release cycles'
+        'Reduced scope changes by 35% through stakeholder requirements gathering',
+        'Increased project delivery accuracy by 30% through requirements workshops',
+        'Improved cost visibility by 20% with Power BI dashboards and executive reporting',
+        'Reduced manual effort by 40% through automation and data quality frameworks',
+        'Improved data reliability by 30% with gap and root cause analysis',
+        'Enabled 45% faster data access through cloud migration and SQL optimization',
+        'Increased customer interaction by 25% through analytics-driven product insights'
+    ],
+    'experience': [
+        {
+            'company': 'LTIMindtree',
+            'location': 'Mumbai, India',
+            'title': 'Business Analyst / Data Engineer',
+            'timeline': 'Jun 2022 – Aug 2025',
+            'highlights': [
+                'Partnered with 15+ business stakeholders to define KPIs',
+                'Led requirements workshops across SDLC phases',
+                'Developed Power BI dashboards for executive reporting',
+                'Conducted gap analysis and root cause analysis',
+                'Collaborated in Agile/Scrum environments',
+                'Analyzed large-scale operational datasets'
+            ]
+        },
+        {
+            'company': 'Make Me Builder',
+            'location': 'Mumbai, India',
+            'title': 'Business Analyst Intern',
+            'timeline': 'Jan 2021 – Apr 2021',
+            'highlights': [
+                'Developed web-based analytics dashboards',
+                'Conducted competitive analysis and user research',
+                '25% increase in customer interaction'
+            ]
+        }
+    ],
+    'projects': [
+        {
+            'name': 'Angel Protection System (MSBA Capstone)',
+            'organization': 'Carnegie Mellon University',
+            'role': 'Project Manager & Analytics Lead',
+            'timeline': 'Jan 2026 – Apr 2026',
+            'description': 'Real-time security monitoring using computer vision analytics'
+        }
     ],
     'domain_expertise': [
-        'FinOps', 'Cloud Cost Optimization', 'Business Process Improvement',
-        'Data Engineering', 'AI Engineering', 'Migration Projects'
+        'Requirements Analysis', 'Stakeholder Engagement', 'Process Improvement',
+        'Cloud Migration', 'Data Quality Management', 'Executive Reporting',
+        'Agile Delivery', 'Business Intelligence'
     ],
-    'certifications': [
-        'Microsoft Certified: Fabric Analytics Engineer Associate',
-        'Microsoft Certified: Fabric Data Engineer Associate',
-        'Microsoft Certified: Power BI Data Analyst Associate',
-        'Databricks Certified Data Engineer Associate'
-    ]
+    'certifications': []  # Not mentioned in resume, but can be added later
 }
 
 # H1B Sponsor Companies (public data)

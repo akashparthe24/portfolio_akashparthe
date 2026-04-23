@@ -116,16 +116,17 @@ MSBA Candidate, Carnegie Mellon University
         # Customize based on company or role
         body = f"""I'm currently completing my Master of Science in Business Analytics at Carnegie Mellon University (Tepper School of Business) and actively seeking full-time Business Analyst opportunities starting in May 2026.
 
-I bring 3+ years of hands-on experience as a Business Analyst at LTIMindtree, where I partnered with stakeholders to deliver measurable business impact:
+I bring 3 years of hands-on experience as a Business Analyst at LTIMindtree, where I partnered with 15+ business stakeholders to translate requirements into measurable outcomes:
 
-• Drove 40% cost reduction and 30% faster delivery through requirements gathering and process improvements
-• Provided executive visibility into $5M+ cloud spend via Power BI dashboards and KPI development
-• Reduced manual validation effort by 90% by translating analyst needs into automated workflows
-• Led cross-functional workshops with finance and engineering teams to improve operational efficiency by 10-15%
+• Reduced scope changes by 35% through stakeholder interviews, workshops, and BRD/FRD documentation
+• Increased project delivery accuracy by 30% by leading requirements workshops across SDLC phases
+• Improved cost visibility by 20% with Power BI dashboards and executive reporting
+• Reduced manual effort by 40% through gap analysis, automation, and data quality frameworks
+• Enabled 45% faster data access by supporting cloud migration initiatives with SQL optimization
 
-My technical toolkit includes SQL, Python, Power BI, Tableau, Azure (Synapse, Data Factory, Fabric), and Databricks. I hold multiple Microsoft certifications (Fabric Analytics Engineer, Power BI Data Analyst) and a Databricks Data Engineer certification.
+My technical toolkit includes SQL, Python, Power BI, Tableau, Azure (Synapse, Data Factory, Fabric), Snowflake, and Databricks. I'm proficient in Agile/Scrum methodologies and tools like JIRA and Confluence.
 
-I'm particularly drawn to roles where I can combine stakeholder collaboration, data-driven problem-solving, and technical execution to drive business outcomes."""
+I'm particularly drawn to roles where I can combine stakeholder collaboration, requirements analysis, and data-driven decision support to drive business outcomes."""
 
         # Add visa status
         body += f"\n\n{self.candidate['visa_status']}."

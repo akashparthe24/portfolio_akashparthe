@@ -32,7 +32,8 @@ EDUCATION:
 TOP SKILLS:
 Business Analysis: {', '.join(self.resume['skills']['business_analysis'][:6])}
 Analytics: {', '.join(self.resume['skills']['analytics'][:6])}
-Technical: {', '.join(self.resume['skills']['technical'][:6])}
+Methodologies & Tools: {', '.join(self.resume['skills']['methodologies_tools'][:6])}
+Platforms: {', '.join(self.resume['skills']['platforms'][:4])}
 
 KEY ACHIEVEMENTS:
 {chr(10).join(f"- {achievement}" for achievement in self.resume['achievements'])}
@@ -86,11 +87,12 @@ TOP MATCHING ROLES:
         """Generate a 2-3 sentence elevator pitch."""
         return (
             f"{self.resume['name']} is a Business Analyst with {self.resume['years_experience']} years "
-            f"of experience driving measurable business impact through data-driven solutions. "
-            f"Currently completing an MSBA at Carnegie Mellon University, with expertise in "
-            f"stakeholder management, process improvement, and analytics tools including "
-            f"SQL, Python, Power BI, and Azure. Track record includes 40% cost reduction, "
-            f"30% faster delivery, and executive visibility into $5M+ cloud spend."
+            f"of experience partnering with business stakeholders to translate requirements into "
+            f"measurable outcomes. Currently completing an MSBA at Carnegie Mellon University, with "
+            f"expertise in requirements gathering (BRDs/FRDs), stakeholder management, Agile/Scrum, "
+            f"and analytics tools including SQL, Python, Power BI, and Azure. Track record includes "
+            f"35% reduction in scope changes, 30% improvement in delivery accuracy, and 40% reduction "
+            f"in manual effort through process automation."
         )
 
     def get_skill_keywords_for_ats(self) -> List[str]:
